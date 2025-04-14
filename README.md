@@ -1,59 +1,86 @@
-# GamifyLifeFrontend
+# 🎮 Gamify Life — Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+**Gamify Life** es una aplicación desarrollada en Angular 19 que convierte tus metas reales en un videojuego personal. Puedes crear "juegos" con objetivos reales y desbloquear recompensas a medida que avanzas.
 
-## Development server
+Este frontend ha sido construido con:
+- Angular 19 (standalone components y signals)
+- Firebase Authentication (login con Google)
+- Bootstrap + Angular Material para la interfaz
+- Arquitectura modular y limpia para facilitar la escalabilidad
 
-To start a local development server, run:
+---
+
+## 🚀 Demo
+
+Disponible en `http://localhost:4200/` tras iniciar el servidor.  
+(Próximamente desplegado en producción)
+
+---
+
+## 🛠️ Cómo ejecutar en local
+
+### 1. Clona el repositorio
+
+```bash
+git clone https://github.com/Ismaelsiten/gamify-life-frontend.git
+cd gamify-life-frontend
+```
+
+### 2. Instala dependencias
+
+```bash
+npm install
+```
+
+### 3. Ejecuta el servidor de desarrollo
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🔗 Abre [http://localhost:4200](http://localhost:4200) en tu navegador.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ⚙️ Scripts disponibles
 
-```bash
-ng generate component component-name
-```
+| Comando            | Descripción                           |
+|--------------------|---------------------------------------|
+| `ng serve`         | Lanza el servidor de desarrollo       |
+| `ng build`         | Compila el proyecto                   |
+| `ng test`          | Ejecuta tests unitarios               |
+| `ng generate`      | Crea componentes / servicios, etc.    |
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🔐 Variables de entorno
 
-## Building
+Este proyecto no utiliza `.env`, las claves de Firebase se gestionan desde `src/environments/environment.ts`.
 
-To build the project run:
+❗ Si lo vas a desplegar o compartir, usa claves ficticias o mueve las reales a `environment.local.ts` (añadido al `.gitignore`).
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+## 📦 Dependencias clave
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- [Angular CLI](https://angular.dev/tools/cli)
+- [Firebase](https://firebase.google.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Angular Material](https://material.angular.io/)
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## ✨ Autor
 
-For end-to-end (e2e) testing, run:
+Desarrollado con 💡 por [Ismael Site Nsegue](https://github.com/Ismaelsiten)
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+> Proyecto personal en construcción. Próximamente se añadirá más funcionalidad como panel de usuario, conexión con el backend, y despliegue automático.
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+📘 Documentación Angular disponible en [angular.dev](https://angular.dev)
+
+🛠️ Soporte adicional: [gptonline.ai/es](https://gptonline.ai/es)
